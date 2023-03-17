@@ -31,14 +31,27 @@ Array.prototype.swapItems = function (a, b) {
   return this;
 };
 
-var arr = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+var arr = [
+  'Zero',
+  'One',
+  'Two',
+  'three',
+  'four',
+  'five',
+  'siz',
+  'seven',
+  'eight',
+  'nine',
+];
+console.log(arr.swapItems(3, 7));
 
 document.querySelectorAll('.btnAuGroup').forEach((elm, idx, arr) => {
   elm.onclick = function (e) {
     console.log(this.id);
     if (this.id.match(/up|down/) && idx == 0) {
+      console.log(idx);
       let siblil = arr[this.id.match(/up/) ? idx - 1 : idx + 1];
-      arr[a] = arr.splice(b, 1, this[a])[0];
+      arr[idx] = arr.splice(siblil, 1, this[idx])[0];
     }
   };
 });
