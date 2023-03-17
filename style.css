@@ -1,0 +1,164 @@
+h1,
+h2 {
+  font-family: Lato;
+}
+div.dummyCheck {
+  cursor: pointer;
+}
+#EditRefDialog input.inputDiv.disabled,
+#EditRefDialog input.inputDiv[disabled],
+#EditRefDialog input.inputDiv:disabled {
+  background-color: #f7f7f7 !important;
+  opacity: 1;
+  cursor: not-allowed !important;
+}
+#EditRefDialog #dialog-body {
+  overflow: scroll;
+  overflow-x: hidden;
+  height: 380px;
+}
+#EditRefDialog #dialog-body .highlight {
+  border: 1px solid #ff0000 !important;
+}
+#EditRefDialog #dialog-body.edit .highlight,
+#EditRefDialog #dialog-body.edit input:not([disabled]) {
+  border: 1px solid #006bcb !important;
+}
+#EditRefDialog .authGroup_div_border {
+  border: 1px solid #cfcfcf !important;
+  box-sizing: border-box;
+  border-radius: 2px;
+  padding: 0.5rem 1rem;
+}
+#EditRefDialog .refcomments {
+  height: 46px;
+}
+#EditRefDialog .hints,
+#EditRefDialog .query_border {
+  overflow-y: auto;
+  font-size: 12px;
+  min-height: 2rem;
+  background: #fff;
+  outline: 0;
+  padding: 0.25rem 0.5rem;
+  border: 1px solid #cfcfcf !important;
+  box-sizing: border-box;
+  border-radius: 2px;
+}
+#EditRefDialog .hints span.warn,
+#EditRefDialog .query_border span.warn {
+  color: red;
+}
+#EditRefDialog .query_border {
+  height: 58px !important;
+}
+#EditRefDialog .query_border span {
+  display: block !important;
+}
+#EditRefDialog .query_border span.queryview::before {
+  content: attr(label) ': ' !important;
+}
+#EditRefDialog .query_border span.query-res::before {
+  content: 'RES: ' !important;
+}
+#EditRefDialog #preview_div {
+  font-size: 13px;
+}
+#EditRefDialog #preview_div span.surname {
+  color: #008000;
+}
+#EditRefDialog #preview_div span.surname insert {
+  text-decoration: underline;
+}
+#EditRefDialog #preview_div span.surname del {
+  color: red !important;
+}
+#EditRefDialog #preview_div span.given-names {
+  color: #993300;
+}
+#EditRefDialog #preview_div span.given-names insert {
+  text-decoration: underline;
+}
+#EditRefDialog #preview_div span.given-names del {
+  color: red !important;
+}
+#EditRefDialog #preview_div span[data-class],
+#EditRefDialog #preview_div del {
+  display: none !important;
+}
+.btnAuGroup {
+  border: 1px solid red !important;
+  padding: 0.5rem;
+}
+#EditRefDialog #preview_div .preview {
+  padding: 0.5rem 0.75rem;
+  height: 78px;
+  overflow: auto;
+  overflow-x: hidden;
+  border: 1px solid #cfcfcf !important;
+}
+#EditRefDialog #preview_div .preview span {
+  display: inline;
+}
+#EditRefDialog span.article-title {
+  color: #808080;
+}
+#EditRefDialog span.source {
+  color: #3366ff;
+}
+#EditRefDialog span.year {
+  color: #ff99cc;
+}
+#EditRefDialog span.volume {
+  color: #ff0000;
+}
+#EditRefDialog span.issue {
+  color: #6565ff;
+}
+#EditRefDialog span.fpage {
+  color: #008080;
+}
+#EditRefDialog span.lpage {
+  color: #0000ff;
+}
+#EditRefDialog span.etal {
+  color: #ff0000;
+}
+#EditRefDialog span.ext-link {
+  color: #800080;
+}
+/* Ref Re_order */
+#REF_SORT_DIALOG #refListReOr {
+  height: 18em;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 0em 1.05em;
+  border: 1.5px solid #cacaca;
+  border-radius: 2px;
+  color: #383838;
+}
+@media screen and (min-height: 700px) {
+  #REF_SORT_DIALOG #refListReOr {
+    height: 25em;
+  }
+}
+#REF_SORT_DIALOG .impact-background-class,
+#REF_SORT_DIALOG #REF_LIST_SORT .sortable-chosen {
+  background-color: #fefaf6;
+  color: #ff4500;
+}
+#REF_SORT_DIALOG #REF_LIST_SORT div {
+  cursor: pointer;
+  margin-top: 0.25rem;
+}
+#REF_SORT_DIALOG #REF_LIST_SORT div.drag {
+  /* background-color: #C8EBFB; */
+  color: #00417b;
+}
+#REF_SORT_DIALOG #REF_LIST_SORT div:not(:last-child) {
+  margin-bottom: 0.5em;
+  border-bottom: 0.5px solid #d3d3d3;
+}
+#REF_SORT_DIALOG #REF_LIST_SORT div:not(:first-child) {
+  margin-top: 0.5em;
+}

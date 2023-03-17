@@ -1,0 +1,683 @@
+<div id="app"></div>
+
+<div class="mDialog wo-editor-access ui-draggable" id="EditRefDialog">
+  <div class="dialog-container xl">
+    <div class="dialog-content">
+      <div class="dia_header_div ui-draggable-handle">
+        <div class="dia_header_text">Update Missing Elements</div>
+        <div class="ml-auto closeIcons" title="Close">
+          <img class="n_Img" src="UI/svg/dialogClose.svg" />
+        </div>
+      </div>
+      <div class="referencetemplate" oid="referencebody" id="dialog-body">
+        <form class="mb-2" onsubmit="return false;" spellcheck="false">
+          <div class="form-group row">
+            <label for="select_ref_drop" class="col-sm col-form-label"
+              >Reference Type</label
+            >
+            <div class="col-sm mt-0">
+              <select
+                class="form-control form-control-sm selectdropdown disabled"
+                id="select_ref_drop"
+              >
+                <option
+                  value="default"
+                  selected=""
+                  data-default=""
+                  data-lang-lab="choose_type"
+                >
+                  Choose the Type
+                </option>
+                <option value="journal">Journals</option>
+                <option value="book">Book</option>
+              </select>
+            </div>
+          </div>
+          <div class="authGroup_div_border" id="authGroup_div_border">
+            <div class="row" id="">
+              <div class="col-4">
+                <label data-lang-lab="surname">Surname/Family name</label>
+              </div>
+              <div class="col-4">
+                <label data-lang-lab="given_name">Forename/Given name</label>
+              </div>
+              <div class="col-4"></div>
+            </div>
+            <div class="" id="refauthorrepeat">
+              <div class="row form-group">
+                <div class="col-4">
+                  <input
+                    type="text"
+                    autocomplete="off"
+                    value="Huo"
+                    id="surname_0"
+                    class="inputDiv form-control form-control-sm"
+                  />
+                </div>
+                <div class="col-4">
+                  <input
+                    type="text"
+                    autocomplete="off"
+                    value="TI"
+                    class="inputDiv form-control form-control-sm"
+                    id="givenname_0"
+                  />
+                </div>
+                <div class="col-1">
+                  <button
+                    type="submit"
+                    class="btn btn-sm btnAuGroup"
+                    id="add_0"
+                  >
+                    <i class="fa fa-plus"></i>
+                  </button>
+                </div>
+                <div class="col-1">
+                  <button
+                    type="submit"
+                    class="btn btn-sm btnAuGroup"
+                    id="minus_0"
+                  >
+                    <i class="fa fa-minus"></i>
+                  </button>
+                </div>
+                <div class="col-1">
+                  <button
+                    type="submit"
+                    class="btn btn-sm btnAuGroup"
+                    id="up_0"
+                    disabled="s"
+                  >
+                    <i class="fa fa-arrow-up"></i>
+                  </button>
+                </div>
+                <div class="col-1">
+                  <button
+                    type="submit"
+                    class="btn btn-sm btnAuGroup"
+                    id="down_0"
+                  >
+                    <i class="fa fa-arrow-down"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="row form-group">
+                <div class="col-4">
+                  <input
+                    type="text"
+                    autocomplete="off"
+                    value="Lee"
+                    id="surname_1"
+                    class="inputDiv form-control form-control-sm"
+                  />
+                </div>
+                <div class="col-4">
+                  <input
+                    type="text"
+                    autocomplete="off"
+                    value="SD"
+                    class="inputDiv form-control form-control-sm"
+                    id="givenname_1"
+                  />
+                </div>
+                <div class="col-1">
+                  <button
+                    type="submit"
+                    class="btn btn-sm btnAuGroup"
+                    id="add_1"
+                  >
+                    <i class="fa fa-plus"></i>
+                  </button>
+                </div>
+                <div class="col-1">
+                  <button
+                    type="submit"
+                    class="btn btn-sm btnAuGroup"
+                    id="minus_1"
+                  >
+                    <i class="fa fa-minus"></i>
+                  </button>
+                </div>
+                <div class="col-1">
+                  <button type="submit" class="btn btn-sm btnAuGroup" id="up_1">
+                    <i class="fa fa-arrow-up"></i>
+                  </button>
+                </div>
+                <div class="col-1">
+                  <button
+                    type="submit"
+                    class="btn btn-sm btnAuGroup"
+                    id="down_1"
+                  >
+                    <i class="fa fa-arrow-down"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="row form-group">
+                <div class="col-4">
+                  <input
+                    type="text"
+                    autocomplete="off"
+                    value="Lin"
+                    id="surname_2"
+                    class="inputDiv form-control form-control-sm"
+                  />
+                </div>
+                <div class="col-4">
+                  <input
+                    type="text"
+                    autocomplete="off"
+                    value="HC."
+                    class="inputDiv form-control form-control-sm"
+                    id="givenname_2"
+                  />
+                </div>
+                <div class="col-1">
+                  <button
+                    type="submit"
+                    class="btn btn-sm btnAuGroup"
+                    id="add_2"
+                  >
+                    <i class="fa fa-plus"></i>
+                  </button>
+                </div>
+                <div class="col-1">
+                  <button
+                    type="submit"
+                    class="btn btn-sm btnAuGroup"
+                    id="minus_2"
+                  >
+                    <i class="fa fa-minus"></i>
+                  </button>
+                </div>
+                <div class="col-1">
+                  <button type="submit" class="btn btn-sm btnAuGroup" id="up_2">
+                    <i class="fa fa-arrow-up"></i>
+                  </button>
+                </div>
+                <div class="col-1">
+                  <button
+                    type="submit"
+                    class="btn btn-sm btnAuGroup"
+                    id="down_2"
+                  >
+                    <i class="fa fa-arrow-down"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="row form-group">
+                <div class="col-4">
+                  <input
+                    type="text"
+                    autocomplete="off"
+                    value="Demo"
+                    id="surname_3"
+                    class="inputDiv form-control form-control-sm"
+                  />
+                </div>
+                <div class="col-4">
+                  <input
+                    type="text"
+                    autocomplete="off"
+                    value="Y"
+                    class="inputDiv form-control form-control-sm"
+                    id="givenname_3"
+                  />
+                </div>
+                <div class="col-1">
+                  <button
+                    type="submit"
+                    class="btn btn-sm btnAuGroup"
+                    id="add_3"
+                  >
+                    <i class="fa fa-plus"></i>
+                  </button>
+                </div>
+                <div class="col-1">
+                  <button
+                    type="submit"
+                    class="btn btn-sm btnAuGroup"
+                    id="minus_3"
+                  >
+                    <i class="fa fa-minus"></i>
+                  </button>
+                </div>
+                <div class="col-1">
+                  <button type="submit" class="btn btn-sm btnAuGroup" id="up_3">
+                    <i class="fa fa-arrow-up"></i>
+                  </button>
+                </div>
+                <div class="col-1">
+                  <button
+                    type="submit"
+                    class="btn btn-sm btnAuGroup"
+                    id="down_3"
+                  >
+                    <i class="fa fa-arrow-down"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="row form-group">
+                <div class="col-4">
+                  <input
+                    type="text"
+                    autocomplete="off"
+                    value="Demo"
+                    id="surname_4"
+                    class="inputDiv form-control form-control-sm"
+                  />
+                </div>
+                <div class="col-4">
+                  <input
+                    type="text"
+                    autocomplete="off"
+                    value="S"
+                    class="inputDiv form-control form-control-sm"
+                    id="givenname_4"
+                  />
+                </div>
+                <div class="col-1">
+                  <button
+                    type="submit"
+                    class="btn btn-sm btnAuGroup"
+                    id="add_4"
+                  >
+                    <i class="fa fa-plus"></i>
+                  </button>
+                </div>
+                <div class="col-1">
+                  <button
+                    type="submit"
+                    class="btn btn-sm btnAuGroup"
+                    id="minus_4"
+                  >
+                    <i class="fa fa-minus"></i>
+                  </button>
+                </div>
+                <div class="col-1">
+                  <button type="submit" class="btn btn-sm btnAuGroup" id="up_4">
+                    <i class="fa fa-arrow-up"></i>
+                  </button>
+                </div>
+                <div class="col-1">
+                  <button
+                    type="submit"
+                    class="btn btn-sm btnAuGroup"
+                    id="down_4"
+                    disabled="s"
+                  >
+                    <i class="fa fa-arrow-down"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="etal"
+                /><label
+                  class="form-check-label"
+                  for="etal"
+                  data-lang-lab="etal"
+                  >et al</label
+                >
+              </div>
+            </div>
+            <div class="form-group">
+              <label data-lang-lab="collab">Group / Collaborator name</label
+              ><input
+                type="text"
+                autocomplete="off"
+                class="inputDiv form-control form-control-sm"
+                id="collab"
+                placeholder="Collab content here"
+              />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="title" data-lang-lab="title">Article title</label>
+            <div class="mt-0" data-input="journal">
+              <input
+                type="text"
+                autocomplete="off"
+                class="inputDiv form-control form-control-sm"
+                id="title"
+                placeholder="Article Title"
+              />
+            </div>
+            <div class="ds-none" data-input="book">
+              <input
+                type="text"
+                autocomplete="off"
+                class="inputDiv form-control form-control-sm"
+                id="chapter-title"
+                placeholder="Chapter Title"
+              />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="source" data-lang-lab="source">Journal title</label
+            ><input
+              type="text"
+              autocomplete="off"
+              class="inputDiv form-control form-control-sm"
+              id="source"
+              placeholder="Source here"
+            />
+          </div>
+          <div class="row" id="entry_row_2">
+            <div class="col-2 form-group" id="">
+              <label data-lang-lab="year">Year</label
+              ><input
+                type="text"
+                autocomplete="off"
+                class="inputDiv form-control form-control-sm"
+                id="year"
+              />
+            </div>
+            <div class="col-3 form-group ds-none" data-input="book">
+              <label data-lang-lab="edn">Edition number</label
+              ><input
+                type="text"
+                autocomplete="off"
+                class="inputDiv form-control form-control-sm"
+                id="edition"
+              />
+            </div>
+            <div class="col-5">
+              <div class="row" id="issue_vol_group">
+                <div class="col-6 form-group">
+                  <label data-lang-lab="vol">Volume number</label
+                  ><input
+                    type="text"
+                    autocomplete="off"
+                    class="inputDiv form-control form-control-sm"
+                    id="volume"
+                  />
+                </div>
+                <div class="col-6 form-group">
+                  <label data-lang-lab="issue">Issue number</label
+                  ><input
+                    type="text"
+                    autocomplete="off"
+                    class="inputDiv form-control form-control-sm"
+                    id="issue"
+                    disabled=""
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="col" id="page_group">
+              <div class="row" id="page_group_div">
+                <div class="col-6 form-group">
+                  <label data-lang-lab="f_page">First page</label
+                  ><input
+                    type="text"
+                    autocomplete="off"
+                    class="inputDiv form-control form-control-sm"
+                    id="fpage"
+                  />
+                </div>
+                <div class="col-6 form-group">
+                  <label data-lang-lab="l_page">Last page</label
+                  ><input
+                    type="text"
+                    autocomplete="off"
+                    class="inputDiv form-control form-control-sm"
+                    id="lpage"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row ds-none" data-input="book" id="publisher_group">
+            <div class="col">
+              <label data-lang-lab="pub_name">Publisher name</label
+              ><input
+                type="text"
+                autocomplete="off"
+                class="inputDiv form-control form-control-sm"
+                id="publisher-name"
+                placeholder=""
+              />
+            </div>
+            <div class="col">
+              <label data-lang-lab="pub_loc">Publisher location</label
+              ><input
+                type="text"
+                autocomplete="off"
+                class="inputDiv form-control form-control-sm"
+                id="publisher-loc"
+                placeholder=""
+              />
+            </div>
+          </div>
+          <div class="row ds-none" data-input="journal">
+            <div class="col-4">
+              <label data-lang-lab="supp">Supplement number</label
+              ><input
+                type="text"
+                autocomplete="off"
+                class="inputDiv form-control form-control-sm"
+                id="suppl"
+                placeholder="Supplemental"
+              />
+            </div>
+            <div class="col">
+              <label data-lang-lab="doi_url">DOI / URL</label
+              ><input
+                type="text"
+                autocomplete="off"
+                class="inputDiv form-control form-control-sm"
+                id="ext-link"
+                placeholder="DOI / URL"
+              />
+            </div>
+          </div>
+          <div class="form-group ds-none">
+            <div class="col-12">
+              <label data-lang-lab="cmds">Comments</label>
+            </div>
+            <div class="col-12">
+              <input
+                type="text"
+                autocomplete="off"
+                class="
+                  inputDiv
+                  form-control form-control-sm
+                  refborder
+                  refcomments
+                "
+                id="comments"
+                placeholder="Comments content here"
+              />
+            </div>
+          </div>
+          <div class="row ds-none" id="query_div">
+            <div class="col-12"><label data-lang-lab="query">Query</label></div>
+            <div class="col-12">
+              <div
+                type="text"
+                autocomplete="off"
+                class="inputDiv form-control form-control-sm query_border"
+                id="query"
+                placeholder="Query content will display"
+              ></div>
+            </div>
+          </div>
+          <div class="form-group ds-none" id="query_close_div">
+            <label data-lang-lab="res_to_query">Respond to the query</label
+            ><input
+              type="text"
+              autocomplete="off"
+              class="inputDiv form-control form-control-sm"
+              id="query_respond"
+              placeholder=""
+            />
+          </div>
+          <div class="row ds-none" id="hints_div">
+            <div class="col-12">
+              <label data-lang-lab="hints-tips">Hints / Tips</label>
+            </div>
+            <div class="col-12">
+              <div
+                type="text"
+                autocomplete="off"
+                class="inputDiv form-control form-control-sm hints"
+                id="hint"
+                placeholder=""
+              ></div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="default" id="dialog-footer">
+        <button
+          type="submit"
+          title="Respond to the query"
+          id="Reply_qry_edit_ref"
+          class="btn secondary-btn btn-sm"
+          data-lang-lab="res_to_query"
+        >
+          Respond to the query
+        </button>
+        <button
+          type="submit"
+          title="Update"
+          id="Update_cmd_edit_ref"
+          class="btn secondary-btn btn-sm ds-none"
+          data-lang-lab="update_with_cmd"
+        >
+          Update with Command
+        </button>
+        <button
+          type="submit"
+          title="Cancel"
+          id="cancel_edit_ref"
+          class="btn secondary-btn btn-sm closeIcons"
+          data-lang-lab="cancel"
+        >
+          Cancel
+        </button>
+        <button
+          type="submit"
+          title="Insert"
+          id="insert_edit_ref"
+          class="btn primary-btn btn-sm disabled"
+          data-lang-lab="update"
+        >
+          Update
+        </button>
+      </div>
+      <div class="" id="preview_div">
+        <label class="col" data-lang-lab="preview">Preview</label>
+        <div class="col preview" autocomplete="off" id="preview">
+          <span
+            class="person-group"
+            data-name="person-group"
+            person-group-type="author"
+            ><span class="string-name" data-name="string-name"
+              ><span class="surname" data-name="surname" title="S N">Huo</span>
+              <span class="given-names" data-name="given-names" title="F N"
+                >TI</span
+              ></span
+            >,
+            <span class="string-name" data-name="string-name"
+              ><span class="surname" data-name="surname" title="S N">Lee</span>
+              <span class="given-names" data-name="given-names" title="F N"
+                >SD</span
+              ></span
+            >,
+            <span class="string-name" data-name="string-name"
+              ><span class="surname" data-name="surname" title="S N">Lin</span>
+              <span class="given-names" data-name="given-names" title="F N"
+                >HC.</span
+              ></span
+            >,
+            <span class="string-name" data-name="string-name"
+              ><span class="surname" data-name="surname" title="S N">Demo</span>
+              <span class="given-names" data-name="given-names" title="F N"
+                >Y</span
+              ></span
+            >,
+            <span class="string-name" data-name="string-name"
+              ><span class="surname" data-name="surname" title="S N"
+                ><del
+                  class="ice-del ice-cts-1"
+                  data-changedata=""
+                  data-cid="33"
+                  data-last-change-time="1679056905898"
+                  data-time="1679056905898"
+                  data-userid="1"
+                  data-username="yasar.mohideen@newgen.co"
+                  data-edit="surname"
+                ></del
+                ><insert
+                  class="ice-ins ice-cts-1"
+                  data-changedata=""
+                  data-cid="33"
+                  data-last-change-time="1679056906666"
+                  data-time="1679056906666"
+                  data-userid="1"
+                  data-username="yasar.mohideen@newgen.co"
+                  data-edit="surname"
+                  >Demo</insert
+                ></span
+              >
+              <span class="given-names" data-name="given-names" title="F N"
+                ><del
+                  class="ice-del ice-cts-1"
+                  data-changedata=""
+                  data-cid="33"
+                  data-last-change-time="1679056907730"
+                  data-time="1679056907730"
+                  data-userid="1"
+                  data-username="yasar.mohideen@newgen.co"
+                  data-edit="givenname"
+                ></del
+                ><insert
+                  class="ice-ins ice-cts-1"
+                  data-changedata=""
+                  data-cid="33"
+                  data-last-change-time="1679056907731"
+                  data-time="1679056907731"
+                  data-userid="1"
+                  data-username="yasar.mohideen@newgen.co"
+                  data-edit="givenname"
+                  >S</insert
+                ></span
+              ></span
+            ></span
+          >
+          <span
+            class="article-title"
+            data-name="article-title"
+            title="Article Title"
+            >Selecting an optimal prognostic system for liver cirrhosis: the
+            model for end-stage liver disease and beyond</span
+          >.
+          <span class="source" data-name="source" title="Journal Title"
+            >Liver Int</span
+          >
+          <span class="year" data-name="year" title="Year">2008</span>;
+          <span class="volume" data-name="volume" title="Vol">28</span>:<span
+            class="fpage"
+            data-name="fpage"
+            title="FP"
+            >606</span
+          >–<span class="lpage" data-name="lpage" title="LP">613</span>.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="container">
+  <div>1</div>
+  ,
+  <div>2</div>
+  ,
+  <div>3</div>
+</div>
