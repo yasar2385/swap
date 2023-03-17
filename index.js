@@ -48,10 +48,12 @@ console.log(arr.swapItems(3, 7));
 document.querySelectorAll('.btnAuGroup').forEach((elm, idx, arr) => {
   elm.onclick = function (e) {
     console.log(this.id);
-    if (this.id.match(/up|down/) && idx == 0) {
-      console.log(idx);
-      let siblil = arr[this.id.match(/up/) ? idx - 1 : idx + 1];
-      arr[idx] = arr.splice(siblil, 1, this[idx])[0];
+    var arr = Array.from(this.parentElement.children);
+    var a = Array.prototype.indexOf.call(arr, this);
+    if (this.id.match(/up|down/) && a == 0) {
+      console.log(a);
+      let b = arr[this.id.match(/up/) ? idx - 1 : idx + 1];
+      arr[a] = arr.splice(b, 1, this[a])[0];
     }
   };
 });
